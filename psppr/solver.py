@@ -1,7 +1,4 @@
-"""General propositional satisfiability via Tseitin CNF + DPLL.
-
-No external dependencies. A satisfying model contains original proposition names.
-"""
+"""Преобразование выражений в произвольной форме к КНФ."""
 from dataclasses import dataclass
 from parser import Expr, variables
 

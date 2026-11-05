@@ -1,4 +1,4 @@
-"""Boolean evaluation, truth tables and algebraic-law verification."""
+"""Определение булевых операций."""
 from itertools import product
 from parser import parse, variables
 
@@ -60,7 +60,7 @@ def format_expr(expr):
     return f"({format_expr(expr.args[0])}{symbols[expr.op]}{format_expr(expr.args[1])})"
 
 def simplify(expr):
-    """Safe equivalence rewrites; does not expand distributively."""
+    """Упрощение логических выражений."""
     from parser import Expr
     steps = []
     def walk(node):

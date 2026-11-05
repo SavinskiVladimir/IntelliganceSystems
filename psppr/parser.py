@@ -1,4 +1,4 @@
-"""Parser for !, *, + and ->, in precedence order."""
+"""Парсер"""
 from dataclasses import dataclass
 from lexer import tokenize, LogicSyntaxError
 

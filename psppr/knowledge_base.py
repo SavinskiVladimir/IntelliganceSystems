@@ -1,4 +1,4 @@
-"""Named propositions, Horn clauses and explicitly assigned facts."""
+"""Классы для работы с базой правил."""
 from dataclasses import dataclass
 from lexer import LogicSyntaxError
 from parser import parse, variables
@@ -48,7 +48,6 @@ class KnowledgeBase:
         return rule
 
     def add_axiom(self, source):
-        """Accept arbitrary propositional formula; retain Horn rules for traces."""
         expr = parse(source)
         self.validate(expr)
         if expr.op == "IMPLIES" and expr.args[1].op == "ATOM":

@@ -1,4 +1,4 @@
-"""Forward chaining and explicit contradiction detection."""
+"""Механизм вывода."""
 from dataclasses import dataclass
 
 @dataclass

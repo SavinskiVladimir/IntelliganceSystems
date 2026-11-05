@@ -1,4 +1,4 @@
-"""Lexer for propositional expressions."""
+"""Лексер"""
 from dataclasses import dataclass
 
 class LogicSyntaxError(ValueError):
